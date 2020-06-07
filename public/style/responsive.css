@@ -18,6 +18,12 @@
     #page-search-result main .cards {
         grid-template-columns: 1fr;
     }
+    form .field-group {
+        flex-direction: column;
+    }
+    form .field-group .field + .field {
+        margin-left: 0px;
+    }
 }
 @media (min-width: 1700px) {
     #page-home {
