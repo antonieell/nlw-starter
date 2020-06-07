@@ -1,5 +1,5 @@
 #modal {
-    background-color: #0E0A14ef;
+    background-color: #0e0a14ef;
 
     height: 100vh;
     width: 100vw;
@@ -18,7 +18,6 @@
     display: none;
 }
 
-
 #modal .content {
     color: white;
 
@@ -30,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 48px
+    margin-bottom: 48px;
 }
 
 #modal .header a {
@@ -98,7 +97,7 @@
     align-items: center;
 }
 
-#modal.point h1 { 
+#modal.point h1 {
     color: white;
 
     margin-top: 32px;
