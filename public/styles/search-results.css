@@ -1,17 +1,34 @@
-#page-search-result {
+body {
+    background-color: white;
+}
+body::after {
+    content: "";
+    position: absolute;
+    background: #f0f0f5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 16rem;
+    z-index: -1;
+}
+
+#page-search-results {
     width: 90%;
     max-width: 1100px;
+
     margin: 0 auto;
 }
 
-#page-search-result header {
-    margin-top: 40px;
+#page-search-results header {
+    margin-top: 48px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#page-search-result header a {
+#page-search-results header a {
     color: var(--title-color);
     font-weight: bold;
 
@@ -19,26 +36,21 @@
     align-items: center;
 }
 
-#page-search-result header a span {
+#page-search-results header a span {
     margin-right: 16px;
-    background: url(../assets/icones/arrow-left.svg) no-repeat;
+    background-image: url('../assets/arrow-left.svg');
+
     display: flex;
-    width: 24px;
+
+    width: 20px;
     height: 24px;
 }
 
-#page-search-result form {
-    background-color: white;
-
-    margin: 80px auto;
-    padding: 64px;
-    max-width: 730px;
-    border-radius: 8px;
-}
 
 main {
-    margin: 48px 48px;
+    margin: 48px;
 }
+
 main h4 {
     font-weight: normal;
     font-family: Roboto, sans-serif;
@@ -49,18 +61,23 @@ main h4 {
 main .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     gap: 24px;
 }
 
-main img {
+main .card img {
     width: 100%;
     height: 150px;
-    border-radius: 8px 8px 0px 0px;
+    
+
     object-fit: cover;
+
+    border-radius: 8px 8px 0 0 ;
 }
 
-main .card h2 {
+main .card h1 {
     margin-top: 32px;
+    
     font-size: 36px;
     line-height: 41px;
     color: #322153;
@@ -68,25 +85,19 @@ main .card h2 {
 
 main .card h3 {
     margin: 24px 0;
+
     font-family: Roboto;
-    font-style: normal;
+    font-weight: bold;
+
     font-size: 24px;
     line-height: 34px;
-    color: #34cb79;
-    font-weight: bold;
+
+    color: var(--primary-color);
 }
+
 main .card p {
     font-size: 16px;
     line-height: 26px;
-    color: #6c6c80;
-}
-body::after {
-    content: "";
-    position: fixed;
-    background-color: white;
-    top: 260px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
+
+    color: #6C6C80;
 }
